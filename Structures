@@ -1,0 +1,24 @@
+//A C program to creat and print the Structure.
+#include<stdio.h>
+
+struct student{
+    int rollnum;
+    char name[100];
+    float marks;
+};
+
+void main(){
+    struct student S1={1,"Sam",99.9};
+    struct student S2={2,"John",89.9};
+    struct student S3={3,"Broad",100.0};
+    printf("Rollnum\tName\tMarks\n");
+    printf("%d\t%s\t%f\n",S1.rollnum,S1.name,S1.marks);
+    printf("%d\t%s\t%f\n",S2.rollnum,S2.name,S2.marks);
+    printf("%d\t%s\t%f\n",S3.rollnum,S3.name,S3.marks);
+}
+
+Output:
+              Rollnum     Name       Marks
+                1         Sam      99.900002
+                2         John     89.900002
+                3         Broad    100.000000
